@@ -1,0 +1,197 @@
+/*HEADER*/
+
+/*NAV*/
+
+nav {
+  height: 60px;
+  color: white;
+  background-color: #0084fd;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+li {
+	display: inline-block;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.nav-button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 20px;
+}
+
+.fa-bars:hover {
+  cursor: pointer;
+}
+
+/* NAV - TABLET and MOBILE ADAPTATION */
+
+@media screen and (max-width: 768px) {
+  .container {
+      width: 90%;
+      max-width: 768px;
+  }
+
+  .nav-right > .desktop {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+}
+
+/* JUMBOTRON */
+
+.jumbotron  .container {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+}
+
+.jumbotron .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 50%;
+  width: 100%;
+
+  margin: 40px 0;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 30%;
+  height: 100%;
+
+  border-radius: 20px;
+  padding: 0 20px;
+
+
+  background-color: #b5ddff;
+}
+
+.card-big {
+  flex-direction: row;
+  width: 65%;
+}
+
+.card-big-left {
+  width: 50%;
+  text-align: left;
+}
+
+.card-big-right {
+  display: flex;
+  align-self: flex-end;
+
+  width: 50%;
+}
+
+.card-big-button {
+  display: block;
+
+  border: none;
+  border-radius: 20px;
+  
+  margin-top: 25px;
+  padding: 10px 50px;
+
+  color: white;
+  font-weight: bold;
+  background-color: #0084fd;
+}
+
+.card-big-button > span {
+  margin-left: 5px
+}
+
+.card-big-button:hover {
+  cursor: pointer;
+}
+
+.card > i {
+  color: #0084fd;
+  font-size: 50px;
+}
+
+.card > h2,
+.card-big-left > h2 {
+  color: #0084fd;
+  font-size: 25px;
+  font-weight: bold;
+
+  margin: 25px 0;
+}
+
+.card > span,
+.card-big-left > span {
+  color: #5a6e7f;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+/* NAV - TABLET ADAPTATION */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .card-big {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-big-left,
+  .card-big-right {
+    width: 100%;
+  }
+
+  .card-big-right > img {
+    width: 280px;
+  }
+}
+
+.jumbotron  .container {
+
+  height: 1400px;
+}
+
+@media screen and (max-width: 480px) {
+
+  body {
+    background-color: #5a6e7f;
+  }
+}
