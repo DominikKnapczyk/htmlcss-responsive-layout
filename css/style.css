@@ -180,3 +180,96 @@
     text-align: center;
   }
 }
+
+/* SECTION 3 */
+
+.third-section {
+ 
+  margin-top: 60px;
+  padding-bottom: 45px;
+
+  text-align: center;
+
+  background-color: #9792e4;
+}
+
+
+.third-section > h2 {
+  padding: 45px 0;
+
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.third-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+}
+
+.benefit-card {
+  
+
+  display: inline;
+
+  padding: 20px;
+  border-radius: 15px;
+
+  text-align: left;
+
+  background-color: white;
+}
+
+.benefit-card > h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #9792e4;
+  line-height: 50px;
+}
+
+.benefit-card > span {
+  
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9792e4;
+}
+
+.benefit-card > p {
+  font-size: 12px;
+  line-height: 20px;
+  color: dimgray;
+}
+
+.benefit-card > button {
+  margin-top: 20px;
+
+  padding: 5px 35px;
+  border: none;
+  border-radius: 20px;
+
+  font-weight: 12px;
+
+  color: white;
+  background-color: #9792e4;
+}
+
+.benefit-card > button:hover {
+  cursor: pointer;
+}
+
+/* SECTION 3 - TABLET ADAPTATION */
+
+@media screen and (min-width: 481px) and (max-width: 768px) { 
+  .third-section .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .third-section .container {
+    grid-template-columns: 1fr;
+  }
+}  
