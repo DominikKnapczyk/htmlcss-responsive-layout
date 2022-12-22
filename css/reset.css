@@ -10,8 +10,10 @@
 	font: inherit;
 }
 
-body {
+body,
+html {
 	min-height: 100vh;
+	min-width: 350px;
 }
 
 img,

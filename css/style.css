@@ -1,0 +1,110 @@
+/* MAIN */
+
+/* SECTION 1 */
+
+.first-section {
+  background-color: #9792e4;
+}
+
+.first-section .container {
+  display: flex;
+
+  width: 75%;
+  max-width: 800px;
+
+  padding: 70px 0;
+}
+
+
+.first-section-left,
+.first-section-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section-left {
+  justify-content: center;
+
+  color: white;
+  width: 40%;
+}
+
+.first-section-left > h2 {
+  margin-top: 80px;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.first-section-left > span {
+  margin-top: 60px;
+
+  line-height: 24px;
+}
+
+.first-section-right {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: end;
+  
+  width: 60%;
+}
+
+.development-card {
+  width: 80%;
+
+  padding: 10px 40px;
+  border-radius: 40px;
+
+  background-color: white;
+}
+
+.development-card > h2 {
+  margin: 15px 0;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.development-card > span {
+  display: block;
+
+  font-style: italic;
+  line-height: 25px;
+}
+
+.development-card > .fa-arrow-down {
+  margin-top: 25px;
+  padding: 14px 17px;
+  border-radius: 100%;
+
+  font-size: 22px;
+
+  background-color: #9792e4;
+}
+
+.development-card > .fa-arrow-down:hover {
+  cursor: pointer;
+}
+
+/* SECTION 1 - TABLET and MOBILE ADAPTATION*/
+
+@media screen and  (max-width: 768px) {
+
+  .first-section .container {
+    flex-direction: column;
+  }
+
+  .first-section-left,
+  .first-section-right {
+    width: 100%;
+  }
+
+
+
+  .development-card {
+    width: 100%;
+    margin-top: 50px;
+  }
+}

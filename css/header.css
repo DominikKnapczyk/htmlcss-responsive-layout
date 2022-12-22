@@ -4,6 +4,8 @@
 
 nav {
   height: 60px;
+  width: 100%;
+
   color: white;
   background-color: #0084fd;
 }
@@ -71,10 +73,13 @@ nav .fa-bars:hover {
 
 /* JUMBOTRON */
 
-.jumbotron  .container {
+.jumbotron .container {
   display: flex;
   flex-direction: column;
-  height: 800px;
+
+  height: 1000px;
+
+  margin-top: 40px;
 }
 
 .jumbotron .row {
@@ -82,10 +87,8 @@ nav .fa-bars:hover {
   align-items: center;
   justify-content: space-between;
 
-  height: 50%;
+  margin-top: 40px;
   width: 100%;
-
-  margin: 40px 0;
 }
 
 .card {
@@ -99,19 +102,21 @@ nav .fa-bars:hover {
   height: 100%;
 
   border-radius: 20px;
-  padding: 0 20px;
-
+  padding: 20px 20px 0 20px;
 
   background-color: #b5ddff;
 }
 
 .card-big {
   flex-direction: row;
+
   width: 65%;
+  padding-bottom: -20px;
 }
 
 .card-big-left {
   width: 50%;
+
   text-align: left;
 }
 
@@ -120,6 +125,7 @@ nav .fa-bars:hover {
   align-self: flex-end;
 
   width: 50%;
+
 }
 
 .card-big-button {
@@ -134,10 +140,11 @@ nav .fa-bars:hover {
   color: white;
   font-weight: bold;
   background-color: #0084fd;
+  margin-bottom: 20px;
 }
 
 .card-big-button > span {
-  margin-left: 5px
+  margin-left: 5px;
 }
 
 .card-big-button:hover {
@@ -163,21 +170,34 @@ nav .fa-bars:hover {
   color: #5a6e7f;
   font-weight: 600;
   line-height: 30px;
+
+  margin-bottom: 20px;
 }
 
 /* JUMBOTRON - TABLET ADAPTATION */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  
+  .jumbotron .container {
+    height: 950px;
+  }
+
+  .small-card {
+    padding: 10px;
+  }
+
   .jumbotron h2 {
     font-size: 1.2em;
   }
+  
   .jumbotron span{
-    font-size: 0.8em;
+    font-size: 0.7em;
+    line-height: 20px;
   }
+
   .jumbotron .container{
     width: 90%;
   }
+
   .card-big {
     flex-direction: column;
     justify-content: space-between;
@@ -193,27 +213,34 @@ nav .fa-bars:hover {
   }
 }
 
-.jumbotron  .container {
-  height: 1400px;
-}
-
 /* JUMBOTRON - MOBILE ADAPTATION */
 
 @media screen and (max-width: 480px) {
+
+  .jumbotron .container {
+    height: 1240px;
+  }
+
+  .jumbotron {
+    margin-bottom: 400px;
+    margin-top: -30px;
+  }
 
   .jumbotron h2 {
     font-size: 1.2em;
     text-align: center;
   }
   .jumbotron span{
-    font-size: 0.8em;
+    font-size: 0.7em;
+    line-height: 18px;
   }
 
   .jumbotron .row {
     flex-direction: column;
-    margin: 50px 0px;
+
+    margin-top: 0px;
   }
- 
+  
   .jumbotron .card {
     width: 90%;
     margin-top: 40px;
@@ -246,5 +273,9 @@ nav .fa-bars:hover {
 
   .small-card {
     padding: 15px;
+  }
+
+  .small-card > i {
+    font-size: 30px;
   }
 }
