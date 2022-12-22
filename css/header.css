@@ -179,6 +179,7 @@ nav .fa-bars:hover {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .jumbotron .container {
     height: 950px;
+    width: 95%;
   }
 
   .small-card {
@@ -192,10 +193,6 @@ nav .fa-bars:hover {
   .jumbotron span{
     font-size: 0.7em;
     line-height: 20px;
-  }
-
-  .jumbotron .container{
-    width: 90%;
   }
 
   .card-big {
@@ -219,6 +216,7 @@ nav .fa-bars:hover {
 
   .jumbotron .container {
     height: 1240px;
+    width: 95%;
   }
 
   .jumbotron {
