@@ -108,3 +108,75 @@
     margin-top: 50px;
   }
 }
+
+/* SECTION 2 */
+
+.second-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.second-section h2 {
+  margin: 20px 0;
+
+  font-size: 35px;
+  font-weight: bold;
+  color: #9792e4;
+}
+
+.second-section p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.partner-card {
+  display: flex;
+  align-items: center;
+
+  height: 180px;
+
+  border-radius: 30px;
+  margin: 20px 0;
+  padding: 0 20px;
+
+  color: white;
+  text-align: left;
+  background-color: #9792e4;
+}
+
+.partner-card-left {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.partner-card-left > img {
+  width: 150px;
+  border-radius: 100%;
+}
+
+.partner-card-right span {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.partner-card-right h3 {
+  margin-top: 15px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* SECTION 2 - TABLET and MOBILE ADAPTATION*/
+
+@media screen and (max-width: 480px) {
+  .partner-card {
+    flex-direction: column;
+
+    height: auto;
+
+    padding: 20px;
+
+    text-align: center;
+  }
+}
